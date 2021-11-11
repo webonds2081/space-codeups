@@ -1,0 +1,25 @@
+.movie {
+
+}
+
+.movie__img {
+  position: relative;
+  width: rem(558);
+  margin: auto;
+}
+
+.movie__img::before {
+  content: "";
+  padding-top: 61.827957%;
+  display: block;
+}
+
+.movie__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

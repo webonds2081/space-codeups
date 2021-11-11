@@ -1,0 +1,378 @@
+@charset "UTF-8";
+.u-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+/* FontFamily */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* font-weight */
+/* リキッドレイアウト対応 */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 1.25vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 4.26667vw;
+  }
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (max-width: 767px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  a:hover {
+    opacity: 1;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #021212;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* フォームリセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.appp {
+  margin: 1px;
+}
+
+.about__title {
+  text-align: center;
+  height: 121px;
+  height: 7.5625rem;
+  line-height: 1;
+}
+
+.about__title span {
+  display: inline-block;
+  position: relative;
+  font-size: 70px;
+  font-size: 4.375rem;
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 700;
+  color: #EBEBEB;
+  padding: 0 5px;
+  padding: 0 0.3125rem;
+}
+
+.about__title span:not(:first-child) {
+  font-size: 50px;
+  font-size: 3.125rem;
+}
+
+.about__title span:nth-child(2) {
+  top: 10px;
+  top: 0.625rem;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.about__title span:nth-child(3) {
+  top: 10px;
+  top: 0.625rem;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.about__title span:nth-child(4) {
+  top: 10px;
+  top: 0.625rem;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.about__title span:nth-child(5) {
+  top: 0px;
+  top: 0rem;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.about__title span:nth-child(6) {
+  top: 20px;
+  top: 1.25rem;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.about__title span:nth-child(7) {
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+.about__title span:nth-child(8) {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.about__title span:nth-child(9) {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.about__title span:nth-child(10) {
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.about__title span:nth-child(11) {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.about__title span:nth-child(12) {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  height: 5rem;
+  padding: 0 40px;
+  padding: 0 2.5rem;
+}
+
+.header__title {
+  width: 138px;
+  width: 8.625rem;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.l-inner {
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .l-inner {
+    max-width: 1330px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.main-view {
+  height: 50.69444vw;
+  background-image: url(../images/common/mv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 13.88889vw;
+}
+
+.main-view__title {
+  width: 44.44444vw;
+}
+
+.movie__img {
+  position: relative;
+  width: 558px;
+  width: 34.875rem;
+  margin: auto;
+}
+
+.movie__img::before {
+  content: "";
+  padding-top: 61.827957%;
+  display: block;
+}
+
+.movie__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section-movie {
+  margin-top: -50px;
+  margin-top: -3.125rem;
+}
+
+.appp {
+  margin: 1px;
+}

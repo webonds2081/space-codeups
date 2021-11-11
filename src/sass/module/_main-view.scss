@@ -1,0 +1,14 @@
+.main-view {
+  height: (730 / 1440) * 100vw;
+  background-image: url(../images/common/mv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  padding-left: (200 / 1440) * 100vw;
+}
+
+.main-view__title {
+  width: (640 / 1440) * 100vw;
+}
