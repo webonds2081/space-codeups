@@ -36,7 +36,9 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  background-color: $background
+  background-color: $background;
+  position: relative;
+  z-index: -9999;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

@@ -1,0 +1,31 @@
+.bg-star {
+  margin-top: rem(-50);
+  position: relative;
+  z-index: -999;
+}
+
+// max-height付ける
+.bg-star::before {
+  content: "";
+  position: absolute;
+  top: rem(8);
+  left: 0;
+  background-image: url(../images/common/bg-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(630 / 1440 * 100vw);
+  height: calc(4972 / 1440 * 100vw);;
+  z-index: -999;
+}
+.bg-star::after {
+  content: "";
+  position: absolute;
+  top: rem(219);
+  right: 0;
+  background-image: url(../images/common/bg-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: calc(820 / 1440 * 100vw);
+  height: calc(4087 / 1440 * 100vw);;
+  z-index: -999;
+}
