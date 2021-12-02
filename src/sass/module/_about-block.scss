@@ -14,7 +14,7 @@
   font-size: rem(18);
   line-height: (30 / 18);
   font-weight: $normal;
-  margin-top: rem(24);
+  margin-top: rem(20);
 }
 
 .about-block__img {
@@ -23,26 +23,30 @@
 
 .about-block__img--1 {
   width: rem(355);
-  left: rem(-490);
+  left: rem(-496);
+  top: rem(-11);
   @include mq(img) {
     left: rem(-440);
   }
 }
 
 .about-block__img--2 {
-  width: rem(398);
-  right: rem(-427);
+  width: rem(485);
+  right: rem(-513);
+  top: rem(-73);
 }
 
 .about-block__img--3 {
-  width: rem(350);
-  left: rem(-490);
+  width: rem(376);
+  left: rem(-504);
+  top: rem(-49);
   @include mq(img) {
     left: rem(-440);
   }
 }
 
 .about-block__img--4 {
-  width: rem(387);
-  right: rem(-427);
+  width: rem(421);
+  right: rem(-488);
+  top: rem(-23);
 }

@@ -1,14 +1,15 @@
 .main-view {
-  height: (730 / 1440) * 100vw;
+  height: calc(730 / 1440 * 100vw);
   background-image: url(../images/common/mv.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   display: flex;
   align-items: center;
-  padding-left: (200 / 1440) * 100vw;
+  padding-left: calc(191 / 1440 * 100vw);
+  padding-top: rem(5);
 }
 
 .main-view__title {
-  width: (640 / 1440) * 100vw;
+  width: calc(658 / 1440 * 100vw);
 }
