@@ -20,6 +20,8 @@
   height: calc(4972 / 1440 * 100vw);;
   z-index: -999;
   max-height: rem(4972);
+  max-width: rem(630);
+
 }
 .bg-star::after {
   content: "";
@@ -33,4 +35,5 @@
   height: calc(4087 / 1440 * 100vw);;
   z-index: -999;
   max-height: rem(4087);
+  max-width: rem(802);
 }

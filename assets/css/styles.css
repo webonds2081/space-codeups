@@ -446,6 +446,8 @@ select::-ms-expand {
   z-index: -999;
   max-height: 4972px;
   max-height: 310.75rem;
+  max-width: 630px;
+  max-width: 39.375rem;
 }
 
 .bg-star::after {
@@ -463,6 +465,8 @@ select::-ms-expand {
   z-index: -999;
   max-height: 4087px;
   max-height: 255.4375rem;
+  max-width: 802px;
+  max-width: 50.125rem;
 }
 
 .content {
