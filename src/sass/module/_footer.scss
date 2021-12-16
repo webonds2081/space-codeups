@@ -10,4 +10,7 @@
   font-size: rem(12);
   padding-top: calc(67 / 1440 * 100vw);
   letter-spacing: -0.033333333em;
+  @include mq(md){
+    padding-top: calc(11 / 375 * 100vw);
+  }
 }

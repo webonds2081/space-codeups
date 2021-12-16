@@ -1,11 +1,17 @@
 .movie {
-
+  @include mq(md){
+    padding: 0 rem(50);
+  }
 }
 
 .movie__img {
   position: relative;
-  width: rem(558);
+  max-width: rem(558);
+  width: 100%;
   margin: auto;
+  @include mq(md){
+    max-width: rem(400);
+  }
 }
 
 .movie__img::before {

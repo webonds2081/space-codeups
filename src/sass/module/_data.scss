@@ -3,9 +3,16 @@
   max-width: rem(1440);
   width: 100%;
   margin: auto;
+  @include mq(md){
+    display: block;
+  }
 }
 
 .data__gender,
 .data__age {
   width: 50%;
+  @include mq(md){
+    width: 80%;
+    margin: auto;
+  }
 }

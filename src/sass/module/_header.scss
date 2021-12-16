@@ -6,12 +6,19 @@
   height: rem(80);
   padding: 0 rem(40);
   z-index: 9999;
+  @include mq(md){
+    padding: 0 rem(20);
+    height: rem(50);
+  }
 }
 .header__title {
   width: rem(138);
   height: inherit;
   display: flex;
   align-items: center;
+  @include mq(md){
+    width: rem(90);
+  }
 }
 
 .header__logo {

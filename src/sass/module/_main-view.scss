@@ -8,6 +8,10 @@
   align-items: center;
   padding-left: calc(191 / 1440 * 100vw);
   padding-top: rem(5);
+  @include mq(md){
+    padding-left: calc(40 / 375 * 100vw);
+
+  }
 }
 
 .main-view__title {

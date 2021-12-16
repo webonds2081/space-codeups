@@ -6,6 +6,9 @@
   width: 100%;
   padding: 0 rem(25);
   margin: auto;
+  @include mq(md){
+    max-width: rem(540);
+  }
 }
 
 .recruit__title {
@@ -15,6 +18,9 @@
   font-weight: $bold;
   line-height: 1.2857142;
   position: relative;
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 
 .recruit__title::after {
@@ -30,11 +36,17 @@
 
 .recruit__items {
   margin-top: rem(51);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
 }
 
 .recruit__item {
   display: flex;
   color: $white;
+  @include mq(md) {
+    display: block;
+  }
 }
 
 .recruit__term {
@@ -47,6 +59,11 @@
   border-bottom: 2px solid #99d4d9;
   display: flex;
   align-items: center;
+  @include mq(md) {
+    max-width: initial;
+    border-bottom: none;
+    padding-top: rem(12.5);
+  }
 }
 
 .recruit__descriptioin {
@@ -59,13 +76,27 @@
   padding-bottom: rem(16);
   padding-left: rem(34);
   border-bottom: 2px solid #ebebeb;
+  @include mq(md) {
+    border-bottom: 1px solid #ebebeb;
+    margin-left: 0;
+    padding-left: rem(12);
+    padding-right: rem(12);
+  font-size: rem(14);
+
+  }
 }
 
 .recruit__item:first-child {
   .recruit__term {
     border-top: 2px solid #99d4d9;
+    @include mq(md) {
+      border-top: 1px solid #ebebeb;
+    }
   }
   .recruit__descriptioin {
     border-top: 2px solid #ebebeb;
+    @include mq(md) {
+      border-top: none;
+    }
   }
 }

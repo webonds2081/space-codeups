@@ -8,8 +8,15 @@
   font-size: rem(50);
   font-weight: $bold;
   position: absolute;
-  left: calc(50% - 528px);
+  left: calc(50% - #{rem(528)});
   top: rem(182);
+  @include mq(md){
+    position: initial;
+    left: initial;
+    font-size: rem(24);
+    margin-top: rem(30);
+    text-align: center;
+  }
 }
 
 .content__title span {
@@ -20,22 +27,41 @@
 .content__title span:nth-child(1) {
   transform: rotate(-14deg);
   top: rem(35);
+  @include mq(md){
+    transform: initial;
+    top: initial;
+  }
 }
 .content__title span:nth-child(2) {
   transform: rotate(-12deg);
   top: rem(21);
   left: rem(-3);
+  @include mq(md){
+    transform: initial;
+    top: initial;
+    left: initial;
+  }
 
 }
 .content__title span:nth-child(3) {
   transform: rotate(-6deg);
   top: rem(4);
   left: rem(-7);
+  @include mq(md){
+    transform: initial;
+    top: initial;
+    left: initial;
+  }
 }
 .content__title span:nth-child(4) {
   transform: rotate(7deg);
   top: rem(1);
   left: rem(-10);
+  @include mq(md){
+    transform: initial;
+    top: initial;
+    left: initial;
+  }
 }
 
 .content__inner {
@@ -43,6 +69,10 @@
   max-width: rem(1410);
   width: 100%;
   margin: auto;
+  @include mq(md){
+    padding-top: rem(40);
+    max-width: rem(440);
+  }
 }
 
 .content__items {
@@ -52,17 +82,30 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  @include mq(md){
+    padding-top: 0;
+    background-image: none;
+  }
 }
 
 .content__item {
   position: absolute;
-
+  @include mq(md){
+    position: initial;
+    padding: 0 rem(20);
+    margin: auto;
+  }
 }
 
 .content__item:nth-child(1){
   top: rem(-160);
   left: calc(50% - #{rem(7)});
   transform: translateX(-50%);
+  @include mq(md){
+    top: initial;
+    left: initial;
+    transform: initial;
+  }
 }
 
 .content__item:nth-child(2){
@@ -74,11 +117,24 @@
 .content__item:nth-child(3){
   top: rem(383);
   right: rem(9);
-
+  @include mq(md){
+    top: initial;
+    right: initial;
+  }
 }
+
+.content__item + .content__item {
+  @include mq(md){
+    margin-top: rem(24);
+  }
+}
+
 .content__img {
   position: relative;
   width: rem(427);
+  @include mq(md){
+    width: 100%;
+  }
 }
 
 .content__subtitle {

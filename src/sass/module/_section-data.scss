@@ -1,3 +1,6 @@
 .section-data {
   margin-top: rem(-73);
+  @include mq(md){
+    margin-top: rem(-20);
+  }
 }
