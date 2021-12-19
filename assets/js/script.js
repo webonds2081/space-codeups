@@ -41,3 +41,71 @@ jQuery(function ($) {
     return false;
   });
 });
+
+
+const tl = gsap.timeline({ ease: Power2.easeInOut });
+
+gsap.fromTo('.main-view__title',{
+  opacity:0,
+},{
+  opacity:1,
+  duration:3.0,
+  // scrollTrigger:{
+  //   trigger:'.main-view__title',
+  //   start:'top center'
+  // }
+});
+gsap.fromTo('.movie__img',{
+  y:'25%',
+  opacity:0
+},{
+  y:0,
+  opacity:1,
+  ease:"bounce.out",
+  scrollTrigger:{
+    trigger:'.movie__img',
+    start:'center center'
+  }
+})
+// gsap.fromTo('.bg-star',{
+//   opacity:0
+// },{
+//   opacity:1,
+//   repeat:-1
+// })
+// gsap.fromTo('.about__title span',{
+//   y:'-1em'
+// },{
+//   y:0,
+//   stagger:0.25,
+//   repeat:-1,
+//   scrollTrigger:{
+//     trigger:'.about__title',
+//     start:'center center'
+//   }
+// });
+
+tl.to('.about__title span',{
+  scale:3,
+  delay:3,
+  stagger:1.0
+},'same').to('.about__title span',{
+  scale:1,
+  stagger:1.0
+},'same')
+
+var textWrapper = document.querySelectorAll('.about-block__title');
+    textWrapper.forEach(
+                (t) => (t.innerHTML = t.textContent.replace(/\S/g, "<span class='letter'>$&</span>"))
+    );
+
+gsap.fromTo('.letter',{
+  rotateZ:'180deg',
+  x:'1em',
+  y:'1.2em',
+},{
+  rotateZ:0,
+  x:0,
+  y:0,
+  stagger:0.25
+})

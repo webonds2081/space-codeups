@@ -201,12 +201,17 @@ select::-ms-expand {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 1;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {
   .about-block__title {
     font-size: 1.25rem;
   }
+}
+
+.about-block__title .letter {
+  display: inline-block;
 }
 
 .about-block__text {
