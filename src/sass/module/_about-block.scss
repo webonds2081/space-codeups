@@ -9,13 +9,9 @@
   font-size: rem(30);
   font-weight: $bold;
   line-height: 1;
-  overflow: hidden;
   @include mq(md){
     font-size: rem(20);
   }
-}
-.about-block__title .letter{
-  display: inline-block;
 }
 .about-block__text {
   font-size: rem(18);
