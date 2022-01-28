@@ -25,6 +25,12 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/styles.css">
 
+   <!-- JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+
 </head>
 <body>
 
@@ -37,35 +43,24 @@
   </header>
 
   <div class="main-view">
-    <div class="main-view__title">
+    <div class="main-view__title js-main-title">
       <img src="./assets/images/common/main-text.png" alt="宇宙を知った人間は、決して前と同じ人間ではいられない">
     </div>
   </div>
 
   <div class="bg-star">
     <div class="movie">
-      <div class="movie__img">
+      <div class="movie__img js-img">
         <img src="./assets/images/common/movie.jpg" alt="スペシャルムービー">
       </div>
     </div>
 
 
-    <section class="about section-about">
+    <section class="about section-about js-about">
       <div class="about__header">
-      <h2 class="about__title">
-      <span>宇</span>
-      <span>宙</span>
-      <span>飛</span>
-      <span>行</span>
-      <span>士</span>
-      <span>っ</span>
-      <span>て</span>
-      <span>こ</span>
-      <span>ん</span>
-      <span>な</span>
-      <span>仕</span>
-      <span>事</span>
-    </h2>
+      <h2 class="about__title js-span">
+        宇宙飛行士ってこんな仕事
+      </h2>
     </div>
       <div class="about__inner l-inner">
         <div class="about__items">
@@ -232,38 +227,8 @@
   </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script>
-    (function (d) {
-      var config = {
-        kitId: 'rtq5txb',
-        scriptTimeout: 3000,
-        async: true
-      },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-    })(document);
-  </script>
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/gsap.js"></script>
+
 </body>
 </html>
